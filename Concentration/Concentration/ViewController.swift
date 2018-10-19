@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardButtons: [UIButton]!
     
-    var emojiChoices = ["🦅", "😱", "🙀", "👿", "🎃", "👻", "🍭", "🍬", "🍎"];
 
     @IBAction func touchCard(_ sender: UIButton) {
         // print("agh! a ghost!");
@@ -56,19 +55,25 @@ class ViewController: UIViewController {
         }
     }
     
-    func emoji(for card: Card) -> String {
-        return "?";
-    }
+    var emojiChoices = ["🦅", "😱", "🙀", "👿", "🎃", "👻", "🍭", "🍬", "🍎"];
     
-    func flipCard(wtihEmoji emoji: String , on button: UIButton) {
-        print("flipCard(withEmoji: \(emoji))");
-        if button.currentTitle == emoji {
-            button.setTitle("", for: UIControl.State.normal);
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1);
-        } else {
-            button.setTitle(emoji, for: UIControl.State.normal);
-            button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1);
+    // var emoji = Dictionary<Int, String>();
+    var emoji = [Int: String]();
+    
+    func emoji(for card: Card) -> String {
+        //let chosenEmoji = emoji[card.identifier]
+//        if emoji[card.identifier] != nil {
+//            return emoji[card.identifier];
+//        } else {
+//            return "?";
+//        }
+        
+        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+            let randeomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)));
+            emoji[card.identifier] = emojiChoices.remove(at: randeomIndex);            
         }
+
+        return emoji[card.identifier] ?? "?";
     }
     
 }
