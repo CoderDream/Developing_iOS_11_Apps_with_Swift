@@ -33,8 +33,7 @@ class ViewController: UIViewController {
         } else {
             print("chosen card was not in cardButtons");
         }
-        //flipCountLabel.text = "Flips: \(flipCount)";
-            
+        //flipCountLabel.text = "Flips: \(flipCount)";            
         //flipCard(wtihEmoji: "👻", on: sender);
     }
 
