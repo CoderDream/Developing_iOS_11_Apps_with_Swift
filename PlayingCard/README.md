@@ -1,4 +1,4 @@
-#  <#Title#>
+
 
 ```shell
 PlayingCard(suit: PlayingCard.PlayingCard.Suit.clubs, rank: PlayingCard.PlayingCard.Rank.numeric(2))
@@ -13,3 +13,17 @@ PlayingCard(suit: PlayingCard.PlayingCard.Suit.hearts, rank: PlayingCard.Playing
 PlayingCard(suit: PlayingCard.PlayingCard.Suit.spades, rank: PlayingCard.PlayingCard.Rank.numeric(4))
 ```
 
+implement CustomStringConvertible
+
+```shell
+♦️5
+♦️7
+♠️Q
+♣️10
+♥️5
+♠️3
+♠️5
+♣️J
+♣️4
+♦️J
+```
