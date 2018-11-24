@@ -12,6 +12,7 @@
 		3F09172121A7FD05006330A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F09171F21A7FD05006330A6 /* Main.storyboard */; };
 		3F09172321A7FD09006330A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F09172221A7FD09006330A6 /* Assets.xcassets */; };
 		3F09172621A7FD09006330A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F09172421A7FD09006330A6 /* LaunchScreen.storyboard */; };
+		3F141AA721A97AE80068DD5E /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F141AA621A97AE80068DD5E /* PlayingCardView.swift */; };
 		3F2A875E21A8D9D0001E0C09 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A875D21A8D9D0001E0C09 /* PlayingCard.swift */; };
 		3F2A876021A8E096001E0C09 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A875F21A8E096001E0C09 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		3F09172521A7FD09006330A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F09172721A7FD09006330A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F141AA521A95C290068DD5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F141AA621A97AE80068DD5E /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		3F2A875D21A8D9D0001E0C09 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		3F2A875F21A8E096001E0C09 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				3F09171D21A7FD05006330A6 /* ViewController.swift */,
 				3F09171F21A7FD05006330A6 /* Main.storyboard */,
 				3F2A875D21A8D9D0001E0C09 /* PlayingCard.swift */,
+				3F141AA621A97AE80068DD5E /* PlayingCardView.swift */,
 				3F2A875F21A8E096001E0C09 /* PlayingCardDeck.swift */,
 				3F09172221A7FD09006330A6 /* Assets.xcassets */,
 				3F2A875C21A8D97E001E0C09 /* Supporting FIles */,
@@ -154,6 +157,7 @@
 				3F09171E21A7FD05006330A6 /* ViewController.swift in Sources */,
 				3F2A876021A8E096001E0C09 /* PlayingCardDeck.swift in Sources */,
 				3F2A875E21A8D9D0001E0C09 /* PlayingCard.swift in Sources */,
+				3F141AA721A97AE80068DD5E /* PlayingCardView.swift in Sources */,
 				3F09171C21A7FD05006330A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
