@@ -88,7 +88,7 @@ extension PlayingCardView {
     }
     
     private var cornerOffset: CGFloat {
-        return bounds.size.height * SizeRatio.cornerOffsetToCornerRadius
+        return cornerRadius * SizeRatio.cornerOffsetToCornerRadius
     }
     
     private var cornerFontSize: CGFloat {
