@@ -29,8 +29,10 @@ implement CustomStringConvertible
 ```
 
 ```shell
-2018-11-27 22:36:53.404897+0800 PlayingCard[32176:2985481] *** Terminating app due to uncaught exception 'NSUnknownKeyException', reason:
-'[<PlayingCard.ViewController 0x101f0e1f0> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key flipCard.'
+2018-11-27 22:36:53.404897+0800 PlayingCard[32176:2985481] *** Terminating app due to uncaught exception 
+'NSUnknownKeyException', reason:
+'[<PlayingCard.ViewController 0x101f0e1f0> setValue:forUndefinedKey:]: 
+this class is not key value coding-compliant for the key flipCard.'
 *** First throw call stack:
 (0x1d377fea0 ... d31cabb4)
 libc++abi.dylib: terminating with uncaught exception of type NSException
