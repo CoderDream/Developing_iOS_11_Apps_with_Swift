@@ -34,7 +34,8 @@ Vibrant development community.
 The heart of Cocoa Touch is 100% object-oriented.
 Application of MVC design model.
 Many computer science concepts applied in a commercial development platform:
-Databases, Graphics, Multimedia, Multithreading, Animation, Networking, and much, much more!Numerous students have gone on to sell products on the AppStore. 
+	Databases, Graphics, Multimedia, Multithreading, Animation, Networking, and much, much more!
+Numerous students have gone on to sell products on the AppStore. 
 
 ### Prerequisites 
 
