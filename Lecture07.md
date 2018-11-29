@@ -25,12 +25,8 @@
 ### Time to build more powerful applications ###
 
 - To do this, we must combine MVCs …
-
 - iOS provides some Controllers whose View is “other MVCs” *
 - You could build your own Controller that does this,but we’re not going to cover that in this course
-
-
-
 - iOS provides some Controllers
 - whose View is “other MVCs”
 
