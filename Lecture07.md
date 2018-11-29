@@ -1,6 +1,6 @@
 # 7. Multiple MVCs, Timer, and Animation #
 
-<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture02_001.png" width="160px">
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture02_001.png" alt="" style="max-width:50%;">
 
 ## Today ##
 
