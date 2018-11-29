@@ -17,7 +17,7 @@
 
 ## MVCs working together ## 
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_003.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_003.png" alt="" style="max-width:50%;">
 
 ## Multiple MVCs ##
 
@@ -29,14 +29,14 @@
 - iOS provides some Controllers
 - whose View is “other MVCs”
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_004.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_004.png" alt="" style="max-width:50%;">
 
 - Examples:
 - UITabBarController
 - UISplitViewController
 - UINavigationController
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_005.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_005.png" alt="" style="max-width:50%;">
 
 ## UITabBarController ##
 
@@ -47,14 +47,14 @@
 - var tabBarItem: UITabBarItem!
 - But usually you just set them in your storyboard.
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_006.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_006.png" alt="" style="max-width:50%;">
 
 - A “Health Data” MVC
 - If there are too many tabs to fit here, the UITabBarController will automatically present a UI for the user to manage the overflow!
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_007.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_007.png" alt="" style="max-width:50%;">
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_009.png)
+<img src="https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/raw/master/lecture/Lecture07_009.png" alt="" style="max-width:50%;">
 
 ## UISplitViewController ##
 
