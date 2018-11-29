@@ -33,12 +33,14 @@
 
 - iOS provides some Controllers
 - whose View is “other MVCs”
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_004.png)
 
 - Examples:
 - UITabBarController
 - UISplitViewController
 - UINavigationController
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_005.png)
 
 ## UITabBarController ##
@@ -49,10 +51,12 @@
 - The icon, title and even a “badge value” on these is determined by the MVCs themselves via their property:
 - var tabBarItem: UITabBarItem!
 - But usually you just set them in your storyboard.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_006.png)
 
 - A “Health Data” MVC
 - If there are too many tabs to fit here, the UITabBarController will automatically present a UI for the user to manage the overflow!
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_007.png)
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_009.png)
@@ -71,6 +75,7 @@
 - This top area is drawn by the UINavigationController
 - But the contents of the top area (like the title or any buttons on the right) are determined by the MVC currently showing (in this case,the “All Settings” MVC)
 - Each MVC communicates these contents via its UIViewController’s navigationItem property
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_012.png)
 
 ### Pushes and pops MVCs off of a stack (like a stack of cards) … ###
@@ -83,17 +88,20 @@
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_014.png)
 
 - Notice this “back" button has appeared. This is placed here automatically by the UINavigationController.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_015.png)
 
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_016.png)
 
 - An “Accessibility” MVC
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_017.png)
 
-
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_018.png)
+
 - A “Larger Text” MVC
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_019.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_020.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_021.png)
@@ -105,21 +113,27 @@
 ## UINavigationController ##
 
 - I want more features, but it doesn’t make sense to put them all in one MVC!
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_026.png)
 
 - So I create a new MVC to encapsulate that functionality.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_027.png)
 
 - We can use a UINavigationController to let them share the screen.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_028.png)
 
 - The UINavigationController is a Controller whose View looks like this.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_029.png)
 
 - But it’s special because we can set its rootViewController outlet to another MVC ...
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_030.png)
 
 - and it will embed that MVC’s View inside its own View.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_031.png)
 
 - Then a UI element in this View (e.g. a UIButton) can segue to the other MVC and its View will now appear in the UINavigationController instead.
@@ -127,15 +141,19 @@
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_032.png)
 
 - We call this kind of segue a “Show (push) segue”.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_033.png)
 
 - Notice this Back button automatically appears.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_034.png)
 
 - When we click it, we’ll go back to the first MVC.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_035.png)
 
 - Notice that after we back out of an MVC, it disappears (it is deallocated from the heap, in fact).
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_036.png)
 
 
@@ -198,16 +216,20 @@ func popViewController(animated: Bool)
 - The simplest way to wrap a Navigation Controller around an MVC is with Editor->Embed In
 
 - This MVC is selected
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_046.png)
 
 - Now that MVC is part of the View of this UINavigationController (it’s the rootViewController)
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_047.png)
 
 - And the UINavigationController is part of the View of this UISplitViewController (it’s the Master, viewControllers[0])
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_048.png)
 
 - You can put this MVC in a UINavigationController too (to give it a title, for example),but be careful because the Detail of the UISplitViewController would now be a UINavigationController 
 - (so you’d have to get the UINavigationController’s rootViewController if you wanted to talk to the graphing MVC inside)
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_049.png)
 
 
@@ -238,15 +260,19 @@ func popViewController(animated: Bool)
 - Can be done in code as well 
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_052.png)
+
 - Ctrl-drag from the button that causes the graph to appear to the MVC of the graph. 
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_053.png)
+
 - Select the kind of segue you want. Usually Show or Show Detail. 
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_054.png)
+
 - Now click on the segue and open the Attributes Inspector 
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_055.png)
+
 - Give the segue a unique identifier here.It should describe what the segue does. 
 
 ### What’s that identifier all about? ###
@@ -283,35 +309,43 @@ func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 	}
 }
 ```
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_057.png)
 
 
 - The segue passed in contains important information about this segue:
 	1. the identifier from the storyboard
 	2. the Controller of the MVC you are segueing to (which was just created for you)
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_058.png)
 
 - The sender is either the instigating object from a storyboard (e.g. a UIButton) or the sender you provided (see last slide) if you invoked the segue manually in code
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_059.png)
 
 - Here is the identifier from the storyboard (it can be nil, so be sure to check for that case)
 - Your Controller might support preparing for lots of different segues from different instigators so this identifier is how you’ll know which one you’re preparing for
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_060.png)
 
 - For this example, we’ll assume we entered “Show Graph” in the Attributes Inspector when we had the segue selected in the storyboard
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_061.png)
 
 - Here we are looking at the Controller of the MVC we’re segueing to
 - It is Any so we must cast it to the Controller we (should) know it to be
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_062.png)
 
 - This is where the actual preparation of the segued-to MVC occurs
 - Hopefully the MVC has a clear public API that it wants you to use to prepare it
 - Once the MVC is prepared, it should run on its own power (only using delegation to talk back)
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_063.png)
 
 - It is crucial to understand that this preparation is happening BEFORE outlets get set!
 - It is a very common bug to prepare an MVC thinking its outlets are set.
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/lecture/Lecture07_064.png)
 
 ## Preventing Segues ##
