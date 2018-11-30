@@ -97,8 +97,27 @@
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01021.png)
 
+- 输入源代码：
+```swift
+@IBAction func touch(_ sender: UIButton) {
+    print("agh! a ghost!")  
+}
+```
+
+- 点击【箭头】，进入“选择运行设备”界面：
+
+![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01046.png)
+
+- 选择“真机或模拟器”：
+
+![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01047.png)
+
+- 程序运行后点击按钮，运行结果如下（控制台输出打印信息）：
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01022.png)
+
+
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01023.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01024.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01025.png)
