@@ -5,27 +5,35 @@
 
 ### Step01 ###
 - 打开Xcode 10.1 （教程为9.0，当前最新版本为10.1），选择【Create a new Xcode Project】：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01001.png)
 
 - 模板选择创建【Single View App】：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01002.png)
 
 - Product Name：MyConcentration，其他信息参考下图填写：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01003.png)
 
 - 选择存放位置：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01004.png)
 
 - 新建后的项目结构：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01005.png)
 
 - 选中下图中的3个文件，放入一个Group（按住Ctrl键，然后依次选择3个文件，再点击右键，弹出窗口）：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01006.png)
 
 - 最终效果：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01007.png)
 
 - 打开“Main.storyboard”文件，添加按钮到ViewController中：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01008.png)
 
 - 
