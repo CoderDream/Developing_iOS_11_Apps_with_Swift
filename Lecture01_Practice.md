@@ -36,7 +36,7 @@
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01008.png)
 
-- 新增按钮到ViewController中：
+- 拖拽一个“Button（按钮）”到ViewController中：
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01009.png)
 
@@ -49,9 +49,10 @@
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01011.png)
 
 - 选择自定义：
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01012.png)
 
-- 点击颜色面板，选择橙色（Orange）：
+- 点击颜色面板，选择橙色（Orange），然后关闭颜色面板：
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01013.png)
 
@@ -83,11 +84,11 @@
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01020.png)
 
-- 打开双文件编辑模式，按下图所示点击右边的按钮，使窗口左边显示storyboard，右边显示ViewController.swift源代码：
+- 打开双文件编辑模式，按下图所示点击右边的按钮，使窗口左边显示Main.storyboard的内容，窗口右边显示ViewController.swift源代码：
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01046.png)
 
-- 建立事件链接，选中“按钮”，按住鼠标右键然后拖向右边的源代码区：
+- 建立事件链接，选中“按钮”，按住鼠标右键然后拖向右边的源代码区，弹窗窗口，按下面的属性填写：
 	1. 	Connection：Action
 	1. 	Object：View Controller
 	1. 	Name：touch
@@ -97,7 +98,11 @@
 
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01021.png)
 
-- 输入源代码：
+- 链接成功后，点击右边源代码的圆圈，可以看到链接信息：
+
+![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01022.png)
+
+- 修改源代码，编写按钮点击事件（在控制台打印信息）：
 ```swift
 @IBAction func touch(_ sender: UIButton) {
     print("agh! a ghost!")  
@@ -106,19 +111,17 @@
 
 - 点击【箭头】，进入“选择运行设备”界面：
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01046.png)
+![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01047.png)
 
 - 选择“真机或模拟器”：
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01047.png)
+![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01048.png)
 
 - 程序运行后点击按钮，运行结果如下（控制台输出打印信息）：
 
-![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01022.png)
-
-
-
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01023.png)
+
+
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01024.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01025.png)
 ![](https://github.com/CoderDream/Developing_iOS_11_Apps_with_Swift/blob/master/snapshot/lecture01/lecture01026.png)
